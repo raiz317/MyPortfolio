@@ -1,0 +1,205 @@
+* {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: black ;
+    z-index: 5;
+}
+
+a {
+    margin: 12px;
+    padding: 12px;
+    color: gold;
+}
+
+nav > a:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+#beranda {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    color: aqua; 
+    padding-left: 50px;
+}
+
+.image {
+    width: 300px; 
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+#portfolio {
+    color: aqua;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.foto {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.foto-projek {
+    max-width: 50%; 
+    border-radius: 10px;
+}
+
+.teks {
+    flex: 1; 
+    color: aqua; 
+    margin-right: 50px;
+}
+
+#prestasi h1 {
+    padding: 50px;
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 128px;
+    margin-top: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.service-detail-items {
+    box-shadow: 2px 4px 4px gray;
+    padding-right: 5px;
+}
+
+.service-detail-items img {
+    width: 100%;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.service-detail-items h2 {
+    padding: 0 16px;
+}
+
+.service-detail-items p {
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+#contact h1 {
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+#contact > h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url(images/accent2.svg);
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    column-gap: 128px;
+}
+
+.contact-detail > div, .contact-detail > form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid gold;
+    padding: 24px;
+    margin-left: 50px;
+}
+
+form h1 {
+    font-size: 28px;
+    text-align: center;
+    color: aqua;
+}
+
+form button {
+    border: 2px solid aqua;
+    padding: 10px;
+    font-size: 20px;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas:    "name subject" 
+                            "email phone" 
+                            "message message";
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid gold;
+}

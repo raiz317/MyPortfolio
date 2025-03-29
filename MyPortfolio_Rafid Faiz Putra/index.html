@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#beranda">Beranda</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#prestasi">Prestasi</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="beranda">
+        <div class="text">
+            <h1>Hello I'm Rafid Faiz Putra</h1>
+            <p>I am a student at Singaperbangsa University, Karawang, Faculty of Computer Science, Department of Information Systems</p>
+        </div>
+        <img src="MyFoto.png" alt="Foto Profil" class="image">
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <div>
+                <h1>Portfolio</h1>
+                <p>Proyek yang telah saya buat: </p>
+            </div>
+            <div class="foto">
+                <img src="Projek.png" alt="Projek" class="foto-projek" width="500px" height="300px">
+                <p class="teks">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos praesentium quibusdam facilis quam nesciunt debitis animi ducimus suscipit. 
+                    Quasi nobis nulla beatae, dicta odio minima incidunt adipisci vel reprehenderit id!</p>
+            </div>
+        </div>
+    </section>
+    <section id="prestasi">
+        <h1>Prestasi</h1>
+        <div class="service-detail">
+            <div class="service-detail-items">
+                <img src="SertifCS.jpg" alt="service1 images">
+                <h2>Fundamental Algoritma</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quod.</p>
+            </div>
+            <div class="service-detail-items">
+                <img src="SertifMS.jpg" alt="service2 images">
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quod.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact us</h1>
+        <div class="contact-detail">
+            <form action="">
+                <h1>Tell Us your Problem</h1>
+                <div class="form-group">
+                    <div id="input-name" class="input-group">
+                        <label for="Name">Name</label>
+                        <input type="text" placeholder=""  >
+                    </div>
+                    <div id="input-subject" class="input-group">
+                        <label for="Subject">Subject</label>
+                        <input type="text">
+                    </div>
+                    <div id="input-email" class="input-group">
+                        <label for="Email">Email</label>
+                        <input type="email">
+                    </div>
+                    <div id="input-phone" class="input-group">
+                        <label for="Phone Number">Phone Number</label>
+                        <input type="tel">
+                    </div>
+                    <div id="input-message" class="input-group">
+                        <label for="Message">Message</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
